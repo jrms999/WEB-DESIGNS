@@ -1,0 +1,117 @@
+body{
+	margin: 0;
+}
+.navigation{
+	background-color:black;
+	margin:0 auto;
+	padding:10px;
+	text-align:center;
+	font-weight:bold;
+	width:100%;
+}
+.navigation ul {
+	padding:0;
+	margin:0;
+}
+.section header h1{
+	font-size: 2em;
+	text-align: center;
+}
+.navigation li{
+background-color:white;
+display:inline-block;
+margin:0 auto;
+padding:10px;
+}
+.navigation a{
+	color: black;
+	text-decoration:none;
+}
+section{
+	background-color:none;
+	display: table;
+	text-align: center;
+	width:100%;
+}
+section header h1{
+	font-size: 4em;
+	color: red;
+}
+h2 {
+	color: red;
+}
+
+.box{
+	float: left;
+	width: 25%;
+}
+.box img{
+	width: 90%;
+	height:250px;
+}
+.box p{
+	background-color: white;
+	border:20px;
+	margin:20px;
+	height:40px;
+	padding:30px; 
+	font-weight: bold;
+
+}
+
+@media (max-width:750px) {
+	.box input {
+		width:75%;
+	}
+
+@media (max-width: 595px){
+	.h2 .img {
+		display: none;
+		width: 68%;
+		margin: 10px auto;
+		float: none;
+	}
+}
+
+@media screen and (min-width: 480px) {
+    .img {
+        background-color: lightgreen;
+    }
+}
+
+.block {
+    display:inline-block;
+    min-width:240px;
+    width:50%;
+    max-width:100%;
+    min-width:calc(50%);
+    width:calc(480px * 480 — 100% * 480);
+}
+
+
+
+
+@media (max-width:750px) {
+	.searchbox input {
+		width:75%;
+	}
+
+@media (max-width: 595px){
+	.right {
+		display: none;}
+	ul.left {
+		width: 68%;
+		margin: 10px auto;
+		float: none;
+	}
+}
+
+@media (max-width:474px) {
+	* {
+		font-size: 12px;
+	}
+	.profile_img{
+		display: none;
+	}
+
+
