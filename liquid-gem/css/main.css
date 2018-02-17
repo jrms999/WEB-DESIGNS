@@ -1,0 +1,192 @@
+body{
+  margin:0;
+  font-family: 'open sans', sans-serif;
+  background-color: #eee;
+}
+
+/*NAVIGATION*/
+nav{
+  height: 70px;
+}
+
+/*left side logo*/
+nav div{
+  float: left;
+  margin: 25px 0 0 50px;
+}
+
+nav div span:first-child{
+  color:#CD5C5C;
+  /*color "indian red"*/
+}
+
+nav div span:nth-child(2){
+  font-family: 'Parisienne', cursive;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/*right side links*/
+nav ul{
+  float:right;
+  margin: 30px 50px 0 0;
+}
+
+nav ul li{
+  display:inline-block;
+}
+
+nav ul li a{
+  padding: 15px;
+  text-decoration: none;
+  color: #666;
+  text-transform: uppercase;
+}
+
+hr{
+  width: 95%;
+}
+/*SECTION*/
+
+/*title*/
+section h1, h2{
+  text-align: center;
+}
+
+section h1{
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+section h1 span{
+  color:#CD5C5C;
+}
+
+section h2{
+  font-size: 14px;
+}
+
+/*banner*/
+section div.banner{
+  text-align: center;
+  margin: 30px 0;
+}
+
+section div.banner img{
+  height: 200px;
+  width: 95%;
+  border-radius: 10px;
+}
+
+/*about, work*/
+div#about, div#work{
+  width: 45%;
+  float:left;
+  margin: 0 2.5%;
+}
+
+h3{
+  text-align:center;
+  font-family: "parisienne", cursive;
+  color:#CD5C5C;
+  font-size: 20px;
+}
+
+/*categories*/
+div.categories{
+  width: 100%;
+  margin:auto;
+  height: 600px;
+  padding: 0 3%;
+}
+
+div.categories div{
+  width: 15%;
+  margin: 2%;
+  float:left;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+div.categories div img{
+  height: 120px;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+div.categories div a{
+  text-decoration:none;
+  color:inherit;
+}
+
+h4{
+  margin: 7px;
+  padding-left: 5px;
+
+}
+
+h5{
+  margin: 5px 0 10px 5px;
+  padding-left: 15px;
+  color:#CD5C5C;
+}
+
+
+/*FOOTER*/
+footer{
+  background-color: #222;
+  height: 375px;
+  margin: 0;
+}
+
+footer h3{
+  text-align: left;
+  padding: 50px 0 0 20px;
+}
+
+footer input, textarea{
+  margin: 0 0 8px 20px;
+  padding: 2px;
+  width: 40%;
+  font-family: "open sans", sans-serif;
+}
+
+footer button{
+  border:none;
+  background-color: #222;
+  color:white;
+  font-size: 20px;
+  font-family: "parisienne", cursive;
+  margin-left: 20px;
+  padding: 5px;
+}
+
+/*social media*/
+footer ul{
+  float:right;
+  margin: 150px 50px 0 0;
+}
+
+footer ul li{
+  display: inline-block;
+}
+
+footer ul li a{
+  text-decoration:none;
+  color: #222222;
+  background-color: #CD5C5C;
+  border-radius: 50%;
+  padding: 4px 8px;
+  margin: 5px;
+}
+
+
+@media screen and (min-width: 1400px) {
+  #social {
+    margin-top: 7%;
+  }
+}
+
+
