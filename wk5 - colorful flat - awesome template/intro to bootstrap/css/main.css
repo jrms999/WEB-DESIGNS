@@ -1,0 +1,24 @@
+/*remove margin on navbar*/
+.navbar {
+  margin: 0;
+}
+/*navigation*/
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #e7e7e7;
+}
+/*buttons*/
+.btn-primary, .btn-default {
+    color: #fff;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+}
+.btn-primary:hover, .btn-default:hover {
+    color: #fff;
+    background-color: #18b495;
+    border-color: #18b495;
+}
+.content-img {
+  width: 100%;
+  height: 150px;
+}
