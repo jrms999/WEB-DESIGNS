@@ -1,0 +1,778 @@
+<!doctype html>
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+	<title>AYE. - Documentation</title>
+
+	<meta name="description" content="">
+
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+	<script src="assets/js/jquery.js"></script>
+
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#000000;color:#FF5208;}
+		::selection{background:#000000;color:#FF5208;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#FF5208;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #FF5208, #FF5208);
+			  background-image: -ms-linear-gradient(top, #FF5208, #FF5208);
+			  background-image: -webkit-gradient(linear, 0 0, 0 FF5208%, from(#0F0F0F), to(#FF5208));
+			  background-image: -webkit-linear-gradient(top, #FF5208, #FF5208);
+			  background-image: -o-linear-gradient(top, #FF5208, #FF5208);
+			  background-image: linear-gradient(top, #FF5208, #FF5208);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF5208', endColorstr='#FF5208', GradientType=0);
+			  border-color: #FF5208 #FF5208 #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #FF5208 #FF5208 #bfbfbf;
+		  background-color: #FF5208;
+		}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#0F0F0F;color:#FFFFFF;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #0F0F0F;-moz-text-shadow:1px 1px 0px #0F0F0F;text-shadow:1px 1px 0px #0F0F0F;}
+		#documenter_sidebar ul{border-top:1px solid #0F0F0F;}
+		#documenter_sidebar ul a{border-top:1px solid #0F0F0F;border-bottom:1px solid #0F0F0F;color:#FF5208;}
+		#documenter_sidebar ul a:hover{background:#000000;color:#FF5208;border-top:1px solid #000000;}
+		#documenter_sidebar ul a.current{background:#000000;color:#FF5208;border-top:1px solid #000000;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+
+</head>
+<body class="documenter-project-aye">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+
+			<li><a href="#extract_the_zip_file" title="1. Extract the zip file">1. Extract the zip file</a></li>
+			<li><a href="#html_structure" title="2. HTML Structure">2. HTML Structure</a></li>
+			<li><a href="#components" title="3. Components">3. Components</a></li>
+			<li><a href="#css" title="4. CSS">4. CSS</a></li>
+			<li><a href="#javascript" title="5. Javascript">5. Javascript</a></li>
+			<li><a href="#php_contact_form" title="6. PHP Contact Form">6. PHP Contact Form</a></li>
+
+		</ul>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+		<h1>AYE.</h1>
+		<h2>Documentation</h2>
+
+	</section>
+
+	<section id="extract_the_zip_file">
+	<div class="page-header"><h3>1. Extract the zip file</h3><hr class="notop"></div>
+<p>
+	After extract the main zip file, you&#39;ll see these folders and files:</p>
+<ul>
+	<li>
+		HTML&nbsp;- Main theme folder
+		<ul>
+			<li>
+				assets
+				<ul>
+					<li>
+						img - UI images folder</li>
+					<li>
+						js - javascript files folder</li>
+					<li>
+						css - css file folder</li>
+					<li>
+						fonts - icon fonts</li>
+					<li>
+						php - php file for contact form</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li>
+		Documentation&nbsp;- help file</li>
+</ul>
+<p>
+	We provide 1 HTML file:</p>
+<ul>
+	<li>
+		index.html&nbsp;- Home page with particle effect</li>
+</ul>
+</section>
+<section id="html_structure">
+	<div class="page-header"><h3>2. HTML Structure</h3><hr class="notop"></div>
+<h2>
+	<strong>General</strong></h2>
+<p>
+	Open a html file with editor, you&#39;ll find the code:</p>
+<pre class="prettyprint lang-html linenums">
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    ...
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id=&quot;preloader&quot;&gt;
+        ...
+    &lt;/div&gt;
+
+    &lt;div id=&quot;navigation&quot;&gt;
+        ...
+    &lt;/div&gt;
+
+    &lt;div id=&quot;home&quot;&gt;
+        ...
+    &lt;/div&gt;
+
+    &lt;section id=&quot;about&quot;&gt;
+        ...
+    &lt;/section&gt;
+
+    &lt;section id=&quot;portfolio&quot;&gt;
+        ...
+    &lt;/section&gt;
+
+    &lt;section id=&quot;hire&quot;&gt;
+        ...
+    &lt;/section&gt;
+
+    &lt;section id=&quot;contact&quot;&gt;
+        ...
+    &lt;/section&gt;
+
+    &lt;footer id=&quot;footer&quot;&gt;
+        ...
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<p>
+	&nbsp;</p>
+<h2 style="margin: 0px 0px 18px; padding: 0px; border: 0px; outline: 0px; font-weight: 100; font-size: 20px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	<strong>Preloader</strong></h2>
+<p>
+	<strong><img alt="" src="assets/images/image_10.jpg" style="width: 400px; height: 228px;"></strong></p>
+<p>
+	Preloader is part of template when loading content.</p>
+<p>
+	The preloader&#39;s code looks like this :</p>
+<pre class="prettyprint lang-html linenums">
+    &lt;!-- START PRELOADER --&gt;
+    &lt;div id=&quot;preloader&quot;&gt;
+        &lt;div id=&quot;status&quot;&gt;
+            &lt;div class=&quot;spinner&quot;&gt;
+                &lt;div class=&quot;double-bounce1&quot;&gt;&lt;/div&gt;
+                &lt;div class=&quot;double-bounce2&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- Loader Name --&gt;
+            &lt;p&gt;AYE.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- END PRELOADER --&gt;</pre>
+<ul>
+	<li>
+		You can rename the text in the preloader section by editing in the &nbsp;<span class="tag" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(30, 52, 123); white-space: pre; background-color: rgb(247, 247, 249);">&lt;p&gt;</span><span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);">AYE.</span><span class="tag" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(30, 52, 123); white-space: pre; background-color: rgb(247, 247, 249);">&lt;/p&gt;</span>&nbsp;&nbsp;tag section.</li>
+</ul>
+<p>
+	&nbsp;</p>
+<h2>
+	<strong>Navigation</strong></h2>
+<p>
+	<strong><img alt="" src="assets/images/image_12.jpg" style="width: 400px; height: 23px;"></strong></p>
+<p>
+	Navigation is the menu that will show to the selected content section.</p>
+<p>
+	The Navigation&#39;s code looks like this :</p>
+<pre class="prettyprint lang-html linenums">
+    &lt;!-- START NAVIGATION --&gt;
+    &lt;div id=&quot;navigation&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-sm-3&quot;&gt;
+                    &lt;div class=&quot;logo&quot;&gt;
+                        &lt;!-- Text / Logo Navigation Name --&gt;
+                        &lt;a href=&quot;#home&quot;&gt;AYE.&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-sm-9&quot;&gt;
+                    &lt;div class=&quot;navigation-menu&quot;&gt;
+                        &lt;div class=&quot;navbar&quot;&gt;
+                            &lt;div class=&quot;navbar-header&quot;&gt;
+                                &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                                    &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                                    &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                                    &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                                    &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                            &lt;/button&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+                                &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;
+                                    &lt;!-- Menu Items --&gt;
+                                    &lt;li&gt;&lt;a class=&quot;smoth-scroll line active&quot; href=&quot;#home&quot;&gt;Home&lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;&lt;a class=&quot;smoth-scroll line&quot; href=&quot;#about&quot;&gt;About&lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;&lt;a class=&quot;smoth-scroll line&quot; href=&quot;#portfolio&quot;&gt;Portfolio&lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;&lt;a class=&quot;smoth-scroll line&quot; href=&quot;#contact&quot;&gt;Contact&lt;/a&gt;
+                                    &lt;/li&gt;
+                                &lt;/ul&gt;
+                                &lt;span&gt;&lt;/span&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- END NAVIGATION --&gt;</pre>
+<ul>
+	<li>
+		To change the name of the text / logo in the navigation, you must edit it in the &nbsp;<span class="tag" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(30, 52, 123); white-space: pre; background-color: rgb(247, 247, 249);">&lt;div</span><span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);"> </span><span class="atn" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: teal; white-space: pre; background-color: rgb(247, 247, 249);">class</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(147, 161, 161); white-space: pre; background-color: rgb(247, 247, 249);">=</span><span class="atv" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(221, 17, 68); white-space: pre; background-color: rgb(247, 247, 249);">&quot;logo&quot;</span><span class="tag" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(30, 52, 123); white-space: pre; background-color: rgb(247, 247, 249);">&gt;</span>&nbsp;&nbsp;tag.
+		<ul>
+			<li>
+				If you just want to change by replacing the text just edit it as below :</li>
+		</ul>
+	</li>
+</ul>
+<pre class="prettyprint lang-html linenums">
+                    &lt;div class=&quot;logo&quot;&gt;
+                        &lt;!-- Text / Logo Navigation Name --&gt;
+                        &lt;a href=&quot;#home&quot;&gt;Your text&lt;/a&gt;
+                    &lt;/div&gt;</pre>
+<ul style="margin-left: 40px;">
+	<li>
+		If you want to replace it with logo image, you can edit it as below :</li>
+</ul>
+<pre class="prettyprint lang-html linenums">
+                    &lt;div class=&quot;logo&quot;&gt;
+                        &lt;!-- Text/Logo Navigation --&gt;
+                        &lt;a href=&quot;index.html&quot;&gt;&lt;img src=&quot;assets/img/logo.png&quot; alt=&quot;logo&quot;&gt;&lt;/a&gt;
+                    &lt;/div&gt;</pre>
+<ul>
+	<li>
+		And for the menu, the links are inside &nbsp;<span class="tag" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(30, 52, 123); white-space: pre; background-color: rgb(247, 247, 249);">&lt;div</span><span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);"> </span><span class="atn" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: teal; white-space: pre; background-color: rgb(247, 247, 249);">class</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(147, 161, 161); white-space: pre; background-color: rgb(247, 247, 249);">=</span><span class="atv" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(221, 17, 68); white-space: pre; background-color: rgb(247, 247, 249);">&quot;navbar-collapse collapse&quot;</span><span class="tag" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(30, 52, 123); white-space: pre; background-color: rgb(247, 247, 249);">&gt;</span>&nbsp; tag.</li>
+</ul>
+<p>
+	&nbsp;</p>
+<h2>
+	<strong>Home</strong></h2>
+<p>
+	<strong><img alt="" src="assets/images/image_1.jpg" style="width: 400px; height: 196px;"></strong></p>
+<p>
+	Home / hero image is the opening content that is in the main part of this template.</p>
+<p>
+	The Home&#39;s code looks like this :</p>
+<pre class="prettyprint lang-html linenums">
+    &lt;!-- START HOME --&gt;
+    &lt;div id=&quot;home&quot; class=&quot;home-background overlay&quot; style=&quot;background-image: url(&#39;assets/img/home-bg.jpg&#39;)&quot; data-stellar-background-ratio=&quot;0.6&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;home-text&quot;&gt;
+                    &lt;!-- Home Text Descriptions (Change Typing Text in JS/Main.js) --&gt;
+                    &lt;h1 data-aos=&quot;zoom-in&quot; data-aos-delay=&quot;1000&quot;&gt;My name is John, &lt;span class=&quot;typing&quot;&gt;&lt;/span&gt;&lt;/h1&gt;
+                    &lt;p data-aos=&quot;fade-up&quot; data-aos-delay=&quot;1000&quot;&gt;&lt;a class=&quot;smoth-scroll btn btn-light&quot; href=&quot;#about&quot;&gt;Lets, Discover me&lt;/a&gt;&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;a class=&quot;smoth-scroll&quot; href=&quot;#about&quot;&gt;&lt;i class=&quot;fa fa-angle-down arrow&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- END HOME --&gt;</pre>
+<ul>
+	<li>
+		To change the background in the home section you can edit the link in the &nbsp;<span class="atn" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: teal; white-space: pre; background-color: rgb(247, 247, 249);">style</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(147, 161, 161); white-space: pre; background-color: rgb(247, 247, 249);">=</span><span class="atv" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(221, 17, 68); white-space: pre; background-color: rgb(247, 247, 249);">&quot;</span><span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);">background</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(147, 161, 161); white-space: pre; background-color: rgb(247, 247, 249);">-</span><span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);">image</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(147, 161, 161); white-space: pre; background-color: rgb(247, 247, 249);">:</span><span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);"> url</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(147, 161, 161); white-space: pre; background-color: rgb(247, 247, 249);">(</span><span class="str" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(221, 17, 68); white-space: pre; background-color: rgb(247, 247, 249);">&#39;assets/img/home-bg.jpg&#39;</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(147, 161, 161); white-space: pre; background-color: rgb(247, 247, 249);">)</span><span class="atv" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(221, 17, 68); white-space: pre; background-color: rgb(247, 247, 249);">&quot;</span>&nbsp;&nbsp;tag.</li>
+	<li>
+		And to change the description text in the home section you can edit it via &nbsp;<span class="tag" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(30, 52, 123); white-space: pre; background-color: rgb(247, 247, 249);">&lt;h1</span><span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);"> </span><span class="atn" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: teal; white-space: pre; background-color: rgb(247, 247, 249);">data-aos</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(147, 161, 161); white-space: pre; background-color: rgb(247, 247, 249);">=</span><span class="atv" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(221, 17, 68); white-space: pre; background-color: rgb(247, 247, 249);">&quot;zoom-in&quot;</span><span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);"> </span><span class="atn" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: teal; white-space: pre; background-color: rgb(247, 247, 249);">data-aos-delay</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(147, 161, 161); white-space: pre; background-color: rgb(247, 247, 249);">=</span><span class="atv" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(221, 17, 68); white-space: pre; background-color: rgb(247, 247, 249);">&quot;1000&quot;</span><span class="tag" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(30, 52, 123); white-space: pre; background-color: rgb(247, 247, 249);">&gt;</span><span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);">My name is John, </span><span class="tag" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(30, 52, 123); white-space: pre; background-color: rgb(247, 247, 249);">&lt;span</span><span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);"> </span><span class="atn" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: teal; white-space: pre; background-color: rgb(247, 247, 249);">class</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(147, 161, 161); white-space: pre; background-color: rgb(247, 247, 249);">=</span><span class="atv" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(221, 17, 68); white-space: pre; background-color: rgb(247, 247, 249);">&quot;typing&quot;</span><span class="tag" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(30, 52, 123); white-space: pre; background-color: rgb(247, 247, 249);">&gt;&lt;/span&gt;</span>&nbsp;&nbsp;tag.&nbsp;For text with typewriting effects you should edit it through the&nbsp;<strong>main.js</strong>&nbsp;file that is inside the&nbsp;<strong>js folder&nbsp;(assets / js / main.js)</strong>.</li>
+</ul>
+<p>
+	&nbsp;</p>
+<h2>
+	<strong>About</strong></h2>
+<p>
+	<strong><img alt="" src="assets/images/image_9.jpg" style="width: 400px; height: 166px;"></strong></p>
+<p>
+	The About&#39;s code looks like this :</p>
+<pre class="prettyprint lang-html linenums">
+    &lt;!-- START ABOUT --&gt;
+    &lt;section id=&quot;about&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div data-aos=&quot;fade-up&quot; data-aos-duration=&quot;1000&quot;&gt;
+                    &lt;!-- Profile image --&gt;
+                    &lt;div class=&quot;col-md-5 col-sm-6 about-img&quot;&gt;
+                        &lt;img src=&quot;assets/img/about-img.jpg&quot; height=&quot;500&quot; class=&quot;img-responsive&quot; alt=&quot;John Doe&quot; /&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-md-7 col-sm-6&quot;&gt;
+                        &lt;h2&gt;Hello I&#39;m John Doe&lt;/h2&gt;
+                        &lt;hr class=&quot;line-title-left&quot;&gt;
+                        &lt;!-- Profile About Descriptions --&gt;
+                        &lt;h4&gt;Web Developer, Photographer Based In UK.&lt;/h4&gt;
+                        &lt;!-- Paragraph 1 --&gt;
+                        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse semper, lectus in lacinia aliquam,
+                           velit erat rutrum mauris, et interdum turpis purus sed arcu. Maecenas ornare augue vitae dui eleifend pharetra.
+                           Aliquam posuere turpis at varius fringilla. Vestibulum ut ipsum dignissim sem congue accumsan. Vestibulum hendrerit
+                           mi orci, eu imperdiet nisi interdum nec. Donec nec ex blandit, imperdiet velit dictum.
+                        &lt;/p&gt;
+                        &lt;!-- Paragraph 2 --&gt;
+                        &lt;p&gt;Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent ut nulla est.
+                           Sed dapibus blandit mi ut facilisis. Praesent vel tellus tellus. Etiam ultrices orci velit, in consequat nulla ultrices
+                           non. Etiam finibus aliquet ipsum, id varius massa sollicitudin id. Quisque vulputate eu lacus at mollis. Vivamus suscipit
+                           volutpat dolor ac ornare.
+                        &lt;/p&gt;
+                        &lt;!-- Social Media --&gt;
+                        &lt;ul class=&quot;social-icons&quot;&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-github&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-codepen&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;!-- END ABOUT --&gt;</pre>
+<ul>
+	<li>
+		To change the profile picture in the about section, you can edit the link in the &nbsp;<span class="tag" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(30, 52, 123); white-space: pre; background-color: rgb(247, 247, 249);">&lt;img</span><span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);"> </span><span class="atn" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: teal; white-space: pre; background-color: rgb(247, 247, 249);">src</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(147, 161, 161); white-space: pre; background-color: rgb(247, 247, 249);">=</span><span class="atv" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(221, 17, 68); white-space: pre; background-color: rgb(247, 247, 249);">&quot;assets/img/about-img.jpg&quot;</span><span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);"> </span><span class="atn" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: teal; white-space: pre; background-color: rgb(247, 247, 249);">height</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(147, 161, 161); white-space: pre; background-color: rgb(247, 247, 249);">=</span><span class="atv" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(221, 17, 68); white-space: pre; background-color: rgb(247, 247, 249);">&quot;500&quot;</span><span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);"> </span><span class="atn" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: teal; white-space: pre; background-color: rgb(247, 247, 249);">class</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(147, 161, 161); white-space: pre; background-color: rgb(247, 247, 249);">=</span><span class="atv" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(221, 17, 68); white-space: pre; background-color: rgb(247, 247, 249);">&quot;img-responsive&quot;</span><span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);"> </span><span class="atn" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: teal; white-space: pre; background-color: rgb(247, 247, 249);">alt</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(147, 161, 161); white-space: pre; background-color: rgb(247, 247, 249);">=</span><span class="atv" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(221, 17, 68); white-space: pre; background-color: rgb(247, 247, 249);">&quot;John Doe&quot;</span><span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);"> </span><span class="tag" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(30, 52, 123); white-space: pre; background-color: rgb(247, 247, 249);">/&gt;</span>&nbsp;&nbsp;tag.</li>
+	<li>
+		You can change your profile description and your social media, to change it you can edit everything inside tag &nbsp;&lt;div<span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);"> </span><span class="atn" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: teal; white-space: pre; background-color: rgb(247, 247, 249);">class</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(147, 161, 161); white-space: pre; background-color: rgb(247, 247, 249);">=</span><span class="atv" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(221, 17, 68); white-space: pre; background-color: rgb(247, 247, 249);">&quot;col-md-7 col-sm-6&quot;</span><span class="tag" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(30, 52, 123); white-space: pre; background-color: rgb(247, 247, 249);">&gt; </span>&nbsp; &nbsp;, In this template using the icon from&nbsp;<a href="http://fontawesome.io/icons/" target="_blank">http://fontawesome.io/icons/</a>&nbsp;you can visit the link to see a list of existing icons.</li>
+</ul>
+<p>
+	&nbsp;</p>
+<h2>
+	<strong>Portfolio</strong></h2>
+<p>
+	<img alt="" src="assets/images/image_14.jpg" style="width: 400px; height: 173px;"></p>
+<p>
+	The portfolio&#39;s code looks like this :</p>
+<pre class="prettyprint lang-html linenums">
+    &lt;!-- START PORTFOLIO --&gt;
+    &lt;section id=&quot;portfolio&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-md-8 col-md-offset-2 text-center&quot;&gt;
+                    &lt;h2&gt;Featured Works&lt;/h2&gt;
+                    &lt;hr class=&quot;line-title-center&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-md-12 col-sm-12&quot;&gt;
+                    &lt;div class=&quot;col-md-12 filter-btn text-center&quot;&gt;
+                        &lt;!-- Menu Portfolio --&gt;
+                        &lt;div class=&quot;filter active&quot; data-filter=&quot;all&quot;&gt;All&lt;/div&gt;
+                        &lt;div class=&quot;filter&quot; data-filter=&quot;.website&quot;&gt;Website&lt;/div&gt;
+                        &lt;div class=&quot;filter&quot; data-filter=&quot;.photography&quot;&gt;Photography&lt;/div&gt;
+                        &lt;div class=&quot;filter lst-cld&quot; data-filter=&quot;.design&quot;&gt;Design&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div id=&quot;port-image&quot; class=&quot;container&quot;&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+                            &lt;!-- Portfolio Item 1 --&gt;
+                            &lt;div class=&quot;col-md-4 col-sm-6 col-xs-12 grid mix design&quot;&gt;
+                                &lt;a href=&quot;assets/img/portfolio/work-1.jpg&quot; class=&quot;image-popup&quot;&gt;
+                                    &lt;figure class=&quot;port-item&quot;&gt;
+                                        &lt;img src=&quot;assets/img/portfolio/work-1.jpg&quot; class=&quot;img-responsive&quot; alt=&quot;Work 1&quot;&gt;
+                                        &lt;figcaption&gt;
+                                            &lt;h5&gt;Design Cover&lt;/h5&gt;
+                                            &lt;p class=&quot;description&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;/p&gt;
+                                        &lt;/figcaption&gt;
+                                    &lt;/figure&gt;
+                                &lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;!-- Portfolio Item 2 --&gt;
+                            &lt;div class=&quot;col-md-4 col-sm-6 col-xs-12 grid mix website&quot;&gt;
+                                &lt;a href=&quot;assets/img/portfolio/work-2.jpg&quot; class=&quot;image-popup&quot;&gt;
+                                    &lt;figure class=&quot;port-item&quot;&gt;
+                                        &lt;img src=&quot;assets/img/portfolio/work-2.jpg&quot; class=&quot;img-responsive&quot; alt=&quot;Work 2&quot;&gt;
+                                        &lt;figcaption&gt;
+                                            &lt;h5&gt;Website One&lt;/h5&gt;
+                                            &lt;p class=&quot;description&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;/p&gt;
+                                        &lt;/figcaption&gt;
+                                    &lt;/figure&gt;
+                                &lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;!-- Portfolio Item 3 --&gt;
+                            &lt;div class=&quot;col-md-4 col-sm-6 col-xs-12 grid mix photography&quot;&gt;
+                                &lt;a href=&quot;assets/img/portfolio/work-3.jpg&quot; class=&quot;image-popup&quot;&gt;
+                                    &lt;figure class=&quot;port-item&quot;&gt;
+                                        &lt;img src=&quot;assets/img/portfolio/work-3.jpg&quot; class=&quot;img-responsive&quot; alt=&quot;Work 3&quot;&gt;
+                                        &lt;figcaption&gt;
+                                            &lt;h5&gt;Photo Building&lt;/h5&gt;
+                                            &lt;p class=&quot;description&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;/p&gt;
+                                        &lt;/figcaption&gt;
+                                    &lt;/figure&gt;
+                                &lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;!-- Portfolio Item 4 --&gt;
+                            &lt;div class=&quot;col-md-4 col-sm-6 col-xs-12 grid mix website&quot;&gt;
+                                &lt;a href=&quot;assets/img/portfolio/work-4.jpg&quot; class=&quot;image-popup&quot;&gt;
+                                    &lt;figure class=&quot;port-item&quot;&gt;
+                                        &lt;img src=&quot;assets/img/portfolio/work-4.jpg&quot; class=&quot;img-responsive&quot; alt=&quot;Work 4&quot;&gt;
+                                        &lt;figcaption&gt;
+                                            &lt;h5&gt;Website Two&lt;/h5&gt;
+                                            &lt;p class=&quot;description&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;/p&gt;
+                                        &lt;/figcaption&gt;
+                                    &lt;/figure&gt;
+                                &lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;!-- Portfolio Item 5 --&gt;
+                            &lt;div class=&quot;col-md-4 col-sm-6 col-xs-12 grid mix photography&quot;&gt;
+                                &lt;a href=&quot;assets/img/portfolio/work-5.jpg&quot; class=&quot;image-popup&quot;&gt;
+                                    &lt;figure class=&quot;port-item&quot;&gt;
+                                        &lt;img src=&quot;assets/img/portfolio/work-5.jpg&quot; class=&quot;img-responsive&quot; alt=&quot;Work 5&quot;&gt;
+                                        &lt;figcaption&gt;
+                                            &lt;h5&gt;Photo Building&lt;/h5&gt;
+                                            &lt;p class=&quot;description&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;/p&gt;
+                                        &lt;/figcaption&gt;
+                                    &lt;/figure&gt;
+                                &lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;!-- Portfolio Item 6 --&gt;
+                            &lt;div class=&quot;col-md-4 col-sm-6 col-xs-12 grid mix design&quot;&gt;
+                                &lt;a href=&quot;assets/img/portfolio/work-6.jpg&quot; class=&quot;image-popup&quot;&gt;
+                                    &lt;figure class=&quot;port-item&quot;&gt;
+                                        &lt;img src=&quot;assets/img/portfolio/work-6.jpg&quot; class=&quot;img-responsive&quot; alt=&quot;Work 6&quot;&gt;
+                                        &lt;figcaption&gt;
+                                            &lt;h5&gt;Design Cover&lt;/h5&gt;
+                                            &lt;p class=&quot;description&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;/p&gt;
+                                        &lt;/figcaption&gt;
+                                    &lt;/figure&gt;
+                                &lt;/a&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;!-- END PORTFOLIO --&gt;</pre>
+<ul>
+	<li>
+		To change the menu on the portfolio you can edit it on the &nbsp;<span class="tag" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(30, 52, 123); white-space: pre; background-color: rgb(247, 247, 249);">&lt;div</span><span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);"> </span><span class="atn" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: teal; white-space: pre; background-color: rgb(247, 247, 249);">class</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(147, 161, 161); white-space: pre; background-color: rgb(247, 247, 249);">=</span><span class="atv" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(221, 17, 68); white-space: pre; background-color: rgb(247, 247, 249);">&quot;filter&quot;</span><span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);"> </span><span class="atn" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: teal; white-space: pre; background-color: rgb(247, 247, 249);">data-filter</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(147, 161, 161); white-space: pre; background-color: rgb(247, 247, 249);">=</span><span class="atv" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(221, 17, 68); white-space: pre; background-color: rgb(247, 247, 249);">&quot;.website&quot;</span><span class="tag" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(30, 52, 123); white-space: pre; background-color: rgb(247, 247, 249);">&gt;</span><span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);">Website</span><span class="tag" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(30, 52, 123); white-space: pre; background-color: rgb(247, 247, 249);">&lt;/div&gt;</span>&nbsp;&nbsp;tag.&nbsp;<strong>Note (the name on the menu should be the same as the data-filter tag = &quot;.name&quot;)</strong></li>
+	<li>
+		To change items on the portfolio, you can edit inside &nbsp;<span class="tag" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(30, 52, 123); white-space: pre; background-color: rgb(247, 247, 249);">&lt;div</span><span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);"> </span><span class="atn" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: teal; white-space: pre; background-color: rgb(247, 247, 249);">id</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(147, 161, 161); white-space: pre; background-color: rgb(247, 247, 249);">=</span><span class="atv" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(221, 17, 68); white-space: pre; background-color: rgb(247, 247, 249);">&quot;port-image&quot;</span><span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);"> </span><span class="atn" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: teal; white-space: pre; background-color: rgb(247, 247, 249);">class</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(147, 161, 161); white-space: pre; background-color: rgb(247, 247, 249);">=</span><span class="atv" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(221, 17, 68); white-space: pre; background-color: rgb(247, 247, 249);">&quot;container&quot;</span><span class="tag" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(30, 52, 123); white-space: pre; background-color: rgb(247, 247, 249);">&gt;</span>&nbsp;&nbsp;tag.&nbsp;<strong>Note (in &nbsp;&lt;div<span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);"> </span><span class="atn" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: teal; white-space: pre; background-color: rgb(247, 247, 249);">class</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(147, 161, 161); white-space: pre; background-color: rgb(247, 247, 249);">=</span><span class="atv" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(221, 17, 68); white-space: pre; background-color: rgb(247, 247, 249);">&quot;col-md-4 col-sm-6 col-xs-12 grid mix website&quot;</span><span class="tag" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(30, 52, 123); white-space: pre; background-color: rgb(247, 247, 249);">&gt;</span>&nbsp; tag, you also have to equate the last code in the tag with the menu on the portfolio).</strong></li>
+</ul>
+<p>
+	&nbsp;</p>
+<h2>
+	<strong>Hire</strong></h2>
+<p>
+	<strong><img alt="" src="assets/images/image_7.jpg" style="width: 400px; height: 81px;"></strong></p>
+<p>
+	The hire&#39;s code looks like this :</p>
+<pre class="prettyprint lang-html linenums">
+    &lt;!-- START HIRE --&gt;
+    &lt;section id=&quot;hire&quot; style=&quot;background-image: url(&#39;assets/img/hire.jpg&#39;);&quot;&gt;
+        &lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-md-12 text-center&quot;&gt;
+                    &lt;h2&gt;I am Available for Freelance &lt;/h2&gt;
+                    &lt;p&gt;&lt;a href=&quot;#contact&quot; class=&quot;smoth-scroll btn btn-light-outline with-arrow&quot;&gt;Hire Me &lt;i class=&quot;fa fa-envelope-o&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;!-- END HIRE --&gt;</pre>
+<ul>
+	<li>
+		You can change the background in the hire section by editing the link in the &nbsp;<span class="atn" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: teal; white-space: pre; background-color: rgb(247, 247, 249);">style</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(147, 161, 161); white-space: pre; background-color: rgb(247, 247, 249);">=</span><span class="atv" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(221, 17, 68); white-space: pre; background-color: rgb(247, 247, 249);">&quot;</span><span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);">background</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(147, 161, 161); white-space: pre; background-color: rgb(247, 247, 249);">-</span><span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);">image</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(147, 161, 161); white-space: pre; background-color: rgb(247, 247, 249);">:</span><span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);"> url</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(147, 161, 161); white-space: pre; background-color: rgb(247, 247, 249);">(</span><span class="str" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(221, 17, 68); white-space: pre; background-color: rgb(247, 247, 249);">&#39;assets/img/hire.jpg&#39;</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(147, 161, 161); white-space: pre; background-color: rgb(247, 247, 249);">);</span><span class="atv" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(221, 17, 68); white-space: pre; background-color: rgb(247, 247, 249);">&quot;</span>&nbsp;&nbsp;tag.</li>
+</ul>
+<p>
+	&nbsp;</p>
+<h2>
+	<strong>Contact</strong></h2>
+<p>
+	<strong><img alt="" src="assets/images/image_8.jpg" style="width: 400px; height: 207px;"></strong></p>
+<p>
+	The contact&#39;s code looks like this :</p>
+<pre class="prettyprint lang-html linenums">
+    &lt;!-- START CONTACT --&gt;
+    &lt;section id=&quot;contact&quot; class=&quot;text-center&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div data-aos=&quot;fade-up&quot; data-aos-duration=&quot;3000&quot;&gt;
+                    &lt;div class=&quot;col-md-12&quot;&gt;
+                        &lt;h2&gt;Contact &lt;/h2&gt;
+                        &lt;hr class=&quot;line-title-center&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;!-- email &amp; Addreess --&gt;
+                    &lt;div class=&quot;col-md-8 col-md-offset-2&quot;&gt;
+                        &lt;div class=&quot;col-md-4 col-sm-4&quot;&gt; &lt;i class=&quot;fa fa-envelope-o fa-2x&quot;&gt;&lt;/i&gt;
+                            &lt;!-- Email --&gt;
+                            &lt;p&gt;&#97;&#121;&#101;&#64;&#101;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-4 col-sm-4&quot;&gt; &lt;i class=&quot;fa fa-map-marker fa-2x&quot;&gt;&lt;/i&gt;
+                            &lt;!-- Address --&gt;
+                            &lt;p&gt;Banguntapan,&lt;br&gt; Yogyakarta, ID 55198&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-4 col-sm-4&quot;&gt; &lt;i class=&quot;fa fa-phone fa-2x&quot;&gt;&lt;/i&gt;
+                            &lt;!-- Phone Number --&gt;
+                            &lt;p&gt; +62 123 456 7890&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-md-8 col-md-offset-2&quot;&gt;
+                        &lt;br&gt;
+                        &lt;h5&gt;Leave me a message&lt;/h5&gt;
+                        &lt;form id=&quot;contact-form&quot; name=&quot;contact&quot; method=&quot;post&quot; novalidate=&quot;novalidate&quot;&gt;
+                            &lt;div class=&quot;row&quot;&gt;
+                                &lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+                                    &lt;div class=&quot;form-group&quot;&gt;
+                                        &lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot; class=&quot;form-control&quot; placeholder=&quot;Name&quot;&gt;
+                                        &lt;p class=&quot;help-block text-danger&quot;&gt;&lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+                                    &lt;div class=&quot;form-group&quot;&gt;
+                                        &lt;input type=&quot;email&quot; name=&quot;email&quot; id=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;Email&quot;&gt;
+                                        &lt;p class=&quot;help-block text-danger&quot;&gt;&lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;form-group&quot;&gt;
+                                &lt;textarea name=&quot;message&quot; id=&quot;message&quot; class=&quot;form-control&quot; rows=&quot;4&quot; placeholder=&quot;Message&quot;&gt;&lt;/textarea&gt;
+                                &lt;p class=&quot;help-block text-danger&quot;&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;button id=&quot;submit&quot; type=&quot;submit&quot; name=&quot;submit&quot; class=&quot;btn-send btn-send-dark&quot;&gt;Send Message&lt;/button&gt;
+                            &lt;div id=&quot;success&quot;&gt;
+                                &lt;p class=&quot;green textcenter&quot;&gt; Your message was sent, Thank you. &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div id=&quot;error&quot;&gt;
+                                &lt;p&gt; Something maybe wrong please try again &lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/form&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;!-- END CONTACT --&gt;</pre>
+<ul>
+	<li>
+		To change contact information such as email, location and phone number. Contained in the tag such as :
+		<ul>
+			<li>
+				&lt;p&gt;<span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);">&#97;&#121;&#101;&#64;&#101;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</span><span class="tag" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(30, 52, 123); white-space: pre; background-color: rgb(247, 247, 249);">&lt;/p&gt;</span></li>
+			<li>
+				&lt;p&gt;<span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);">Banguntapan,</span><span class="tag" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(30, 52, 123); white-space: pre; background-color: rgb(247, 247, 249);">&lt;br&gt;</span><span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);"> Yogyakarta, ID 55198</span><span class="tag" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(30, 52, 123); white-space: pre; background-color: rgb(247, 247, 249);">&lt;/p&gt;</span></li>
+			<li>
+				&lt;p&gt;<span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);"> +62 123 456 7890</span><span class="tag" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(30, 52, 123); white-space: pre; background-color: rgb(247, 247, 249);">&lt;/p&gt;</span></li>
+		</ul>
+	</li>
+	<li>
+		For your contact form can work you need to edit your email in <strong>php contact form file</strong> is in php folder (assets/php/process.php)</li>
+</ul>
+<p>
+	&nbsp;</p>
+<h2>
+	<strong>Footer</strong></h2>
+<p>
+	<strong><img alt="" src="assets/images/image_16.jpg" style="width: 400px; height: 37px;"></strong></p>
+<p>
+	The footer&#39;s code looks like this :</p>
+<pre class="prettyprint lang-html linenums">
+    &lt;!-- START FOOTER --&gt;
+    &lt;footer id=&quot;footer&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;col-md-8 col-md-offset-2 text-center&quot;&gt;
+                &lt;!-- Social Media --&gt;
+                &lt;ul class=&quot;social-icons-footer&quot;&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-behance&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-dribbble&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;p&gt;Copyright &amp;copy; 2017 Themes Faraday.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/footer&gt;
+    &lt;!-- END FOOTER. --&gt;</pre>
+<ul>
+	<li>
+		To change the social media you have you can edit the links contained in the tag &nbsp;&lt;ul<span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);"> </span><span class="atn" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: teal; white-space: pre; background-color: rgb(247, 247, 249);">class</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(147, 161, 161); white-space: pre; background-color: rgb(247, 247, 249);">=</span><span class="atv" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(221, 17, 68); white-space: pre; background-color: rgb(247, 247, 249);">&quot;social-icons-footer&quot;</span><span class="tag" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(30, 52, 123); white-space: pre; background-color: rgb(247, 247, 249);">&gt;</span>&nbsp; &nbsp;, In this template using the icon from&nbsp;<a href="http://fontawesome.io/icons/" target="_blank">http://fontawesome.io/icons/</a>&nbsp;you can visit the link to see a list of existing icons.</li>
+</ul>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="components">
+	<div class="page-header"><h3>3. Components</h3><hr class="notop"></div>
+<h2>
+	<strong>Line Title</strong></h2>
+<p>
+	There are 2 types of line title in this template, that is line title align left and line title align center.</p>
+<p style="margin-left: 40px;">
+	<img alt="" src="assets/images/image_5.jpg" style="width: 327px; height: 113px;"></p>
+<ul>
+	<li>
+		If you want to use line title align left you can use this tag &nbsp;</li>
+</ul>
+<pre class="prettyprint lang-html linenums" style="margin-left: 40px;">
+&lt;hr class=&quot;line-title-left&quot;&gt;</pre>
+<p style="margin-left: 40px;">
+	<img alt="" src="assets/images/image_17.jpg" style="width: 385px; height: 107px;"></p>
+<ul>
+	<li>
+		If you want to use line title align center you can use this tag&nbsp;</li>
+</ul>
+<pre class="prettyprint lang-html linenums" style="margin-left: 40px;">
+&lt;hr class=&quot;line-title-center&quot;&gt;</pre>
+<p>
+	&nbsp;</p>
+<h2>
+	<strong>Buttons</strong></h2>
+<p>
+	There are 4 types of buttons in this template, namely button light, dark button, button light outline and button with arrow.</p>
+<p style="margin-left: 40px;">
+	<img alt="" src="assets/images/image_3.jpg" style="width: 270px; height: 122px;"></p>
+<ul>
+	<li>
+		If you want to use button light you can use this tag &nbsp;</li>
+</ul>
+<pre class="prettyprint lang-html linenums" style="margin-left: 40px;">
+&lt;a href=&quot;your link&quot; class=&quot;btn btn-light&quot;&gt;your text&lt;/a&gt;</pre>
+<p style="margin-left: 40px;">
+	<img alt="" src="assets/images/image_2.jpg" style="width: 297px; height: 173px;"></p>
+<ul>
+	<li>
+		If you want to use button dark you can use this tag &nbsp;</li>
+</ul>
+<pre class="prettyprint lang-html linenums" style="margin-left: 40px;">
+&lt;a href=&quot;your link&quot; class=&quot;btn btn-dark&quot;&gt;your text&lt;/a&gt;</pre>
+<p style="margin-left: 40px;">
+	<img alt="" src="assets/images/image_6.jpg" style="width: 310px; height: 114px;"></p>
+<ul>
+	<li>
+		If you want to use button light outline you can use this tag</li>
+</ul>
+<pre class="prettyprint lang-html linenums" style="margin-left: 40px;">
+&lt;a href=&quot;your link&quot; class=&quot;btn btn-light-outline&quot;&gt;your text&lt;/a&gt;</pre>
+<p style="margin-left: 40px;">
+	<img alt="" src="assets/images/image_4.jpg"  ></p>
+<ul>
+	<li>
+		If you want to use button with arrow you can use this tag</li>
+</ul>
+<pre class="prettyprint lang-html linenums" style="margin-left: 40px;">
+&lt;a href=&quot;your link&quot; class=&quot;btn btn-light-outline with-arrow&quot;&gt;your text&lt;/a&gt;</pre>
+<p>
+	&nbsp;</p>
+<h2>
+	<strong>Animate On Scroll</strong></h2>
+<ul>
+	<li>
+		If you want to use animate on scroll you can use tags</li>
+</ul>
+<pre class="prettyprint lang-html linenums" style="margin-left: 40px;">
+&lt;div data-aos=&quot;fade-up&quot; data-aos-duration=&quot;1000&quot;&gt;</pre>
+<p style="margin-left: 40px;">
+	And place it just below the&nbsp;<span class="tag" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(30, 52, 123); white-space: pre; background-color: rgb(247, 247, 249);">&lt;div</span><span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);"> </span><span class="atn" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: teal; white-space: pre; background-color: rgb(247, 247, 249);">class</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(147, 161, 161); white-space: pre; background-color: rgb(247, 247, 249);">=</span><span class="atv" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(221, 17, 68); white-space: pre; background-color: rgb(247, 247, 249);">&quot;row&quot;</span><span class="tag" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(30, 52, 123); white-space: pre; background-color: rgb(247, 247, 249);">&gt;</span>&nbsp;tag.&nbsp;You can also change the style in animate on scroll, you can visit this link to see the list of styles in animate on scroll.</p>
+<p style="margin-left: 40px;">
+	<a href="https://michalsnik.github.io/aos/" target="_blank">https://michalsnik.github.io/aos/</a></p>
+<p style="margin-left: 40px;">
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="css">
+	<div class="page-header"><h3>4. CSS</h3><hr class="notop"></div>
+<p>	This Template use 7 CSS files.</p>
+<p>	If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited, every file is well documented.</p>
+<ul>	<li>		aos.css&nbsp;for the page transition.</li>
+	<li>		Bootstrap.min.css&nbsp;for the pre made elements &amp; columns...</li>
+	<li>		flexslider.css&nbsp;for the slider testimonial.</li>
+	<li>		font-awesome.min.css&nbsp;for the icons used in template.</li>
+	<li>		magnific-popup.css&nbsp;for the image pop up portfolio.</li>
+	<li>		style.css&nbsp;is the main CSS file of this template, where you can find all elements&#39; styles.</li>
+	<li>		style-responsives.css for responsive styles to be used in mobile, tablets etc.</li>
+</ul>
+</section>
+<section id="javascript">
+	<div class="page-header"><h3>5. Javascript</h3><hr class="notop"></div>
+<div>
+	<p>		This theme imports 14 Javascript files. All located in assets/js folder.</p>
+</div>
+<ul>	<li>		aos.js&nbsp;for page transition.</li>
+	<li>		particles.min.js for particle effect home</li>
+	<li>		app.js for options particle</li>
+	<li>		typed.js for typed effect description home</li>
+	<li>		bootstrap.min.js javascript for bootstrap.</li>
+	<li>		jquery.flexslider.js&nbsp;for sliders testimonial.</li>
+	<li>		jquery.form.js for contact form</li>
+	<li>		jquery.validate.min.js for validate contact form</li>
+	<li>		jquery.js&nbsp;plugin jQuery.</li>
+	<li>		jquery.magnific-popup.min.js for pop up image portfolio.</li>
+	<li>		magnific-popup-options.js for options magnific-popop</li>
+	<li>		jquery.mixitup.js&nbsp;for portfolio filtering.</li>
+	<li>		jquery.stellar.min.js for parallax effect home background.</li>
+	<li>		main.js&nbsp;this is the main Javascript file of This Template</li>
+</ul>
+</section>
+<section id="php_contact_form">
+	<div class="page-header"><h3>6. PHP Contact Form</h3><hr class="notop"></div>
+<p>
+	The PHP contact form is used to process the form from your contacts so that messages will be sent to your domain host. The location of this file is in the php folder (assets/php/process.php).</p>
+<p>
+	The php contact form&#39;s code looks like this :</p>
+<pre class="prettyprint lang-php linenums">
+&lt;?php
+    $to = &quot;&#102;&#97;&#117;&#122;&#105;&#46;&#102;&#119;&#122;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;&quot;; //This will be replaced with your email
+    $from = $_REQUEST[&#39;email&#39;];
+    $name = $_REQUEST[&#39;name&#39;];
+    $headers = &quot;From: $from&quot;;
+    $subject = &quot;You have a message.&quot;;
+
+    $fields = array();
+    $fields{&quot;name&quot;} = &quot;name&quot;;
+    $fields{&quot;email&quot;} = &quot;email&quot;;
+    $fields{&quot;phone&quot;} = &quot;phone&quot;;
+    $fields{&quot;message&quot;} = &quot;message&quot;;
+
+
+    $body = &quot;Here is what was sent:
+&quot;;
+
+    foreach($fields as $a =&gt; $b){$body .= $b.&quot; : &quot;.$_REQUEST[$a].&quot;
+&quot;; }
+
+    $send = mail($to, $subject, $body, $headers);
+
+?&gt;</pre>
+<ul>
+	<li>
+		To make the contact form work, you can simply edit the email in the &nbsp;<span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);">$to </span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(147, 161, 161); white-space: pre; background-color: rgb(247, 247, 249);">=</span><span class="pln" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(72, 72, 76); white-space: pre; background-color: rgb(247, 247, 249);"> </span><span class="str" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(221, 17, 68); white-space: pre; background-color: rgb(247, 247, 249);">&quot;&#121;&#111;&#117;&#114;&#101;&#109;&#97;&#105;&#108;&#64;&#101;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;&quot;</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: monospace; vertical-align: baseline; color: rgb(147, 161, 161); white-space: pre; background-color: rgb(247, 247, 249);">;</span>&nbsp;&nbsp;tag.</li>
+</ul>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+</section>
+	</div>
+</body>
+</html>
