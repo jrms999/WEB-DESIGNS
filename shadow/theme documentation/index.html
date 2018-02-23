@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shadow - Personal Portfolio Template Documentation</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="shadow html5 based template.">
+    <meta name="keywords" content="shadow, onepage, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/favicon.ico" rel="shortcut icon"/>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="doc-menu">
+        <div class="switch-btn">
+            <span class="switch-bar"></span>
+        </div>
+        <div class="logo">
+            <h2 class="text-center">Shadow<br>Documentation</h2>
+            <p class="text-center">v1.0</p>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#folder">Files & Directories </a></li>
+                <li><a href="#cssj">CSS & Javascripts</a></li>
+                <li><a href="#contact">Contact Form</a></li>
+                <li><a href="#youtube">Youtube Video Background</a></li>
+                <li><a href="#credits">Credits</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main-section">
+        <div class="container-fluid">
+            <div class="header text-center" id="intro">
+                <h1>Shadow - Personal Portfolio Template</h1>
+            </div>
+
+            <div id="folder" class="spad">
+                <h3>Files & Directories</h3>
+                <p>HTML File Included</p>
+                    <ul>
+                        <li><code>index.html</code> is for the Home Page</li>
+                    </ul>
+                <h3 class="mt50">HTML Structure</h3>
+                <p>We are using Bootstrap framework. So, basic HTML structure is same as it is used in Bootstrap.</p>
+                <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;!-- Bootstrap &amp; Other CSS files --&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;header&gt;
+            &lt;!-- Logo --&gt;
+            &lt;!-- Navigation --&gt;
+        &lt;/header&gt;
+        &lt;section&gt;
+            &lt;!-- Intro section --&gt;
+        &lt;/section&gt;
+        &lt;section&gt;
+            &lt;!-- About section --&gt;
+        &lt;/section&gt;
+          &lt;div&gt;
+             &lt;!-- Skills section --&gt;
+        &lt;/div&gt;
+        &lt;section&gt;
+            &lt;!-- Resume section --&gt;
+        &lt;/section&gt;
+        &lt;section&gt;
+            &lt;!-- Portfolio section --&gt;
+        &lt;/section&gt;
+        &lt;section&gt;
+            &lt;!-- Contact Us section --&gt;
+        &lt;/section&gt;
+        &lt;!-- jQuery &amp; other js files --&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+                <p>In this template has many section. if you want you can easily edit any section.</p>
+                <img src="img/section.jpg" alt="">
+        </div>
+
+        <div class="css-javascript spad" id="cssj">
+                    <h3>CSS & Javascripts</h3>
+                    <p>CSS Files Structure</p>
+                    <pre>
+    &lt;!-- ========== Bootstrap &amp; Other CSS Files ========== --&gt;
+    &lt;link rel="stylesheet" href="css/bootstrap.min.css"&gt;
+    &lt;link rel="stylesheet" href="css/font-awesome.min.css"&gt;
+    &lt;link rel="stylesheet" href="css/magnific-popup.css"&gt;
+    &lt;link rel="stylesheet" href="css/owl.carousel.css"&gt;
+    &lt;link rel="stylesheet" href="css/animate.min.css"&gt;
+
+    &lt;!-- ========== Main Style CSS ========== --&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+                    </pre>
+                <p>Javascript Files Structure</p>
+                <pre>    &lt;!-- ========== Include jQuery ========== --&gt;
+    &lt;script src="jquery.min.js"&gt;&lt;/script&gt;
+
+    &lt;!-- ========== Other JS ========== --&gt;
+    &lt;script src="js/jquery.parallax.js"&gt;&lt;/script&gt;
+    &lt;script src="js/plugin.js"&gt;&lt;/script&gt;
+    &lt;script src="js/init-particles.js"&gt;&lt;/script&gt;&lt;!-- Required for particles background --&gt;
+
+
+    &lt;!-- ========== Main js file ========== --&gt;
+    &lt;script src="js/main.js"&gt;&lt;/script&gt;
+                </pre>
+            </div>
+                <div id="contact" class="spad">
+                    <h3>Contact Form</h3>
+                    <p>How to setup contact form.</p>
+                    <ol>
+                        <li>Open <code>mail.php</code></li>
+                        <li>Enter your email address in <code>$email_to</code> variable, where you want to receive emails from website. Replace <code>youremailhere@gmail.com</code> with your email id.
+                            <img src="img/email.jpg" alt="" class="img-responsive">
+                        </li>
+                        <li>If you want you can replace recived in email subjece
+                            <img src="img/email1.png" alt="" class="img-responsive">
+                        </li>
+                    </ol>
+                </div>
+                <div id="youtube" class="spad">
+                    <h3>Youtube Video Background</h3>
+                    <p>How to set Youtube Video Background.</p>
+                    <ol>
+                    <li>just open <code>main.js</code> give your Youtube video ID.
+                        <img src="img/youtube.png" class="img-responsive" alt="">
+                    </li>
+                    <li>Copy Youtube Video Id from url[Shown in below image.]<br>
+                        <img src="img/tubeid.png" alt="">
+                    </li>
+                    </ol>
+                    <p>Make sure you have added following one js files.</p>
+                    <pre>&lt;script src="js/jquery.youtubebackground.js"&gt;&lt;/script&gt;</pre>
+                </div>
+
+                <div id="credits" class="spad">
+                    <h3>Credits</h3>
+                    <ul>
+                       <li><b>JQuery </b></li>
+                       <li><b>Bootstrap</b></li>
+                       <li><b>Font Awesome</b></li>
+                       <li><b>Isotope</b></li>
+                       <li><b>Animate CSS</b></li>
+                       <li><b>Owl Carousel</b></li>
+                       <li><b>Magnific Popup</b></li>
+                       <li><b>Youtube Background</b></li>
+                       <li><b>Particles</b></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
